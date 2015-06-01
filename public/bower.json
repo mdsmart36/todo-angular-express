@@ -1,0 +1,20 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "homepage": "https://github.com/btford/angular-express-seed",
+  "authors": [
+    "Steve Brownlee <chortlehoort@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4"
+  }
+}
