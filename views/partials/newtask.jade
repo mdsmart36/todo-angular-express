@@ -1,0 +1,21 @@
+a(href='') Show all tasks
+h1 Create a task
+
+form#todoForm
+  input(type='hidden', name='db_id', value='{{todo._id}}')
+  .formfield
+    .formfield--prompt Title:
+    input#todoTitle(type='text', name='title', value='{{todo.title}}')
+  .formfield
+    .formfield--prompt Description:
+    textarea#todoDescription(type='text', name='description', value='{{todo.description}}')
+  .formfield
+    .formfield--prompt Priority:
+    input#todoPriority(type='text', name='priority', value='{{todo.priority}}')
+  .formfield
+    .formfield--prompt Complete by:
+    input#todoDuedate(type='text', name='due_date', value='{{todo.due_date.getMonth() + 1}} / {{todo.due_date.getDate()}} / {{todo.due_date.getFullYear()}}')
+  .formfield
+    .formfield--prompt Completed:
+    input#todoDone(type='checkbox', name='complete')
+  input.submitButton(type='submit', ng-click='')

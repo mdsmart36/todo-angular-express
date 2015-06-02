@@ -1,0 +1,12 @@
+a(href='') Create a new task
+h1 {{message}}
+
+each item in todos
+  .todo-item(id='todo_{{item._id}}')
+    div Title: {{item.title}}
+    div Description {{item.description}}
+    div Priority: {{item.priority}}
+    div Due date: {{item.due_date.getMonth() + 1}} / {{item.due_date.getDate()}} / {{item.due_date.getFullYear()}}
+    .actions
+      a.deleteButton(id='{{item._id}}') Delete
+      a.editButton(id='{{item._id}}') Edit
